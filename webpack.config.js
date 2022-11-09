@@ -12,7 +12,8 @@ module.exports = {
   },
   devtool: 'eval-source-map',
   devServer: {               
-    contentBase: './dist'    
+    contentBase: './dist',
+    historyApiFallback: true   
   },
   plugins: [
     new ESLintPlugin(),
